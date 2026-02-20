@@ -1,0 +1,8 @@
+# GitHub to Discord Commit Notification Worker
+This project uses a Cloudflare Worker to receive GitHub webhook events and send commit notifications to a Discord channel.
+
+## Technologies
+- Cloudflare Workers
+- GitHub Webhooks
+- Discord Webhooks
+- JavaScript
