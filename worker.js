@@ -26,7 +26,7 @@ async function handleRequest(request) {
         content: `🛠️ New push to **${payload.repository.name}** by **${payload.pusher.name}**:\n\n${commits}`
     };
 
-    const discordWebhook = 'https://discord.com/api/webhooks/1387982287337160846/L-UC1T80RD1pYIpAPUkEkG1J1hw-TeaJwdk0VlgDI5b3t4rut6bcCb2mhdsSKPqBi3VP'; // REPLACE THIS
+    const discordWebhook = // Add Discord Webhook here
     const discordRes = await fetch(discordWebhook, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -39,3 +39,4 @@ async function handleRequest(request) {
 
     return new Response('OK', { status: 200 });
 }
+
